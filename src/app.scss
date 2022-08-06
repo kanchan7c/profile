@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500&family=Righteous&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
 *,
 *::after,
 *::before {
@@ -6,6 +8,28 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-family: 'Jost', sans-serif; //Thin font
+  font-family: 'Righteous', cursive; //Heading/Title font
+  font-family: 'Work Sans', sans-serif; //Paragraph font
+  --blue-yonder: rgb(240, 245, 252);
+  --sizzling-red: #e84855ff;
+  --carrot-orange: #f18f01ff;
+  --raisin-black: rgba(35, 37, 40, 0.906);
+  --dark-purple: #3a3042ff;
+}
+
 body {
   overflow-x: none;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Work Sans', sans-serif; //Paragraph font
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
