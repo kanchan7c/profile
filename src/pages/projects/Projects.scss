@@ -3,4 +3,17 @@
   width: 100%;
   padding: 2em;
   min-height: 92vh;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  @media (max-width: 950px) {
+    flex-direction: column;
+    margin: 1em auto;
+    gap: 2em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: 50vh;
+    width: 100%;
+  }
 }
