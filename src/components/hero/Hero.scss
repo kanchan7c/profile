@@ -77,3 +77,27 @@
     margin: auto;
   }
 }
+
+.hero_button-group {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+
+  .cta-button {
+    margin-top: 1.5em;
+
+    @media (max-width: 750px) {
+      width: fit-content;
+    }
+  }
+
+  .cv-button {
+    background-color: #e84855c8;
+    border: 2px solid transparent;
+  }
+
+  .btn:hover {
+    background-color: transparent;
+    border: 2px solid white;
+  }
+}

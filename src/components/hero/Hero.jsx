@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.scss';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -13,6 +14,19 @@ const Hero = () => {
         <p className='hero_text-services'>
           Frontend Web Developer &amp; <span>Designer</span>
         </p>
+        <div className='hero_button-group'>
+          <a
+            className='btn cv-button cta-button'
+            href='https://docs.google.com/document/d/15R40sSthTAR8UI2xBTL0qUDfRelQbmdZf7SmmsvgIfI/edit'
+            target='_blank'
+            rel='noreferrer'
+          >
+            Download CV
+          </a>
+          <Link className='btn cta-button' to='/contact'>
+            Contact Me
+          </Link>
+        </div>
       </div>
     </div>
   );
