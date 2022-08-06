@@ -14,9 +14,8 @@
   font-family: 'Work Sans', sans-serif; //Paragraph font
   --blue-yonder: rgb(240, 245, 252);
   --sizzling-red: #e84855ff;
-  --carrot-orange: #f18f01ff;
   --raisin-black: rgba(35, 37, 40, 0.906);
-  --dark-purple: #3a3042ff;
+  --dark-purple: #1d1c1df2;
 }
 
 body {
@@ -24,6 +23,8 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: 'Work Sans', sans-serif; //Paragraph font
+  background-color: var(--dark-purple);
+  color: #ffff;
 }
 
 .hide {
@@ -32,4 +33,10 @@ body {
 
 .show {
   display: block;
+}
+
+@media (max-width: 750px) {
+  html {
+    font-size: 85%;
+  }
 }
