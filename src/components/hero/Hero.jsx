@@ -1,6 +1,7 @@
 import React from 'react';
 import './Hero.scss';
 import { Link } from 'react-router-dom';
+import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 
 const Hero = () => {
   return (
@@ -21,10 +22,10 @@ const Hero = () => {
             target='_blank'
             rel='noreferrer'
           >
-            Download CV
+            Download CV <KeyboardDoubleArrowRightIcon />
           </a>
           <Link className='btn cta-button' to='/contact'>
-            Contact Me
+            Contact Me <KeyboardDoubleArrowRightIcon />
           </Link>
         </div>
       </div>
