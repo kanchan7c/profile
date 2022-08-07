@@ -7,7 +7,6 @@ import FaceIcon from '@mui/icons-material/Face';
 import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
-import ListAltIcon from '@mui/icons-material/ListAlt';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 
 const Navbar = () => {
@@ -41,10 +40,6 @@ const Navbar = () => {
             <AccountTreeIcon />
             Projects
           </Link>
-          <Link className='nav-link' to='/skills'>
-            <ListAltIcon />
-            Skills
-          </Link>
           <Link className='nav-link' to='/contact'>
             <ContactMailIcon />
             Contact
@@ -63,10 +58,6 @@ const Navbar = () => {
           <Link className='nav-link' to='/projects'>
             <AccountTreeIcon />
             Projects
-          </Link>
-          <Link className='nav-link' to='/skills'>
-            <ListAltIcon />
-            Skills
           </Link>
           <Link className='nav-link' to='/contact'>
             <ContactMailIcon />
