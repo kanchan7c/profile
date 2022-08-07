@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Card from '../../components/card/Card';
-import './Projects.scss';
+import './projects.scss';
 
 const Projects = () => {
   const [data, setData] = useState('');

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Navbar.scss';
+import './navbar.scss';
 import { Link } from 'react-router-dom';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import CloseIcon from '@mui/icons-material/Close';

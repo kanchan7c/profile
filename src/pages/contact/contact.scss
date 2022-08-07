@@ -1,0 +1,80 @@
+.contact_page {
+  margin-top: 8vh;
+  width: 95%;
+  min-height: 90vh;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 4em auto 2em auto;
+  gap: 1em;
+  align-items: center;
+}
+
+.contact-entry {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1em;
+  box-shadow: 1px 2px 10px -6px grey;
+  border-radius: 10px;
+  @media (max-width: 950px) {
+    width: 80%;
+  }
+  label {
+    padding: 0.5em 0;
+    width: 100%;
+    // margin: 0.5em 0;
+    font-size: inherit;
+  }
+  input,
+  textarea {
+    padding: 1em 1.5em;
+    // width: 20vw;
+    margin: 0.5em 0;
+    outline: none;
+    border: 1px solid lightgray;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    font-size: inherit;
+  }
+
+  textarea {
+    height: 10vh;
+    font-family: inherit;
+  }
+
+  .contact-btn {
+    text-align: center;
+    width: fit-content;
+    color: #e84855ff;
+    border: 1px solid #e84855ff;
+    margin-top: 1em;
+  }
+}
+
+.contact-social {
+  margin-top: 6em;
+  display: flex;
+  align-items: center;
+
+  .MuiSvgIcon-root {
+    font-size: 4rem;
+    color: #e84855ff;
+    margin-right: 0.5em;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .MuiSvgIcon-root:hover {
+    transform: scale(1.1);
+  }
+}

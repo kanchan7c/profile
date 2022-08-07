@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hero.scss';
+import './hero.scss';
 import { Link } from 'react-router-dom';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 

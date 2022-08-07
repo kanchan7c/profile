@@ -1,5 +1,5 @@
 import React from 'react';
-import './Contact.scss';
+import './contact.scss';
 import emailjs from 'emailjs-com';
 import { useRef } from 'react';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';

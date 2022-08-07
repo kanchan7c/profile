@@ -1,5 +1,5 @@
 import React from 'react';
-import './Card.scss';
+import './card.scss';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 
 const Card = ({ title, description, image, visit, code, date }) => {
