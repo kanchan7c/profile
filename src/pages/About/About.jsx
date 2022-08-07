@@ -20,10 +20,10 @@ const About = () => {
         <p className='about-description-2'>
           I come with great experience in Business Operations and Communications
           which helps me fluently share my ideas to my colleagues as well as
-          off-shore clients. I'm aspiring to get a break through in my career
-          change journey towards Web Development.
+          clients. I'm aspiring to get a break through towards making my career
+          in Web Development.
         </p>
-        <Link to='/projects' className='btn'>
+        <Link to='/projects' className='btn about-btn'>
           Explore My Projects <KeyboardDoubleArrowRightIcon />
         </Link>
       </div>

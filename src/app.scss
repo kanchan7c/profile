@@ -24,8 +24,9 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: 'Work Sans', sans-serif; //Paragraph font
-  background-color: var(--dark-purple);
-  color: #ffff;
+  // background-color: var(--dark-purple);
+  // background-color: #1d012a;
+  // color: #ffff;
 }
 
 .hide {
@@ -46,22 +47,22 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1em;
-  height: 7vh;
+  padding: 1.5em;
+  height: 5vh;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border-radius: 5px;
   width: fit-content;
-  background: transparent;
-  color: inherit;
-  border: 2px inset #e84855ff;
+  background: #fffeff;
+  color: #e84855ff;
+  border: 1px solid #e84855ff;
   letter-spacing: 0.2rem;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
 .btn:hover {
-  background-color: transparent;
-  border: 2px solid white;
+  transform: scale(0.98);
 }
 
 .flex {

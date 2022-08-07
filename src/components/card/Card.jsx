@@ -1,32 +1,40 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Card.scss';
+import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 
-const Card = () => {
+const Card = ({ title, description, image, visit, code, date }) => {
   return (
     <div className='card flex flex-col'>
       <div className='card-img'>
-        <img src='' alt='project' />
+        <img src={image} alt={title} />
       </div>
       <div className='card-title'>
-        <h3>Title</h3>
+        <h3>{title}</h3>
       </div>
       <div className='card-details'>
-        <p className='card-date'>Lorem, ipsum dolor.</p>
-        <p className='card-description'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          molestias harum deleniti, exercitationem eligendi nam? At excepturi
-          beatae nobis tenetur velit, atque provident consequatur exercitationem
-          ipsum a doloremque quas doloribus!
-        </p>
+        <p className='card-date'>{date}</p>
+        <p className='card-description'>{description}</p>
       </div>
       <div className='card-buttons flex'>
-        <Link className='btn btn-1 ' to='' target='_blank'>
-          Visit Online
-        </Link>
-        <Link className='btn' to='' target='_blank'>
-          See Code
-        </Link>
+        {visit ? (
+          <a
+            className='btn btn-1 '
+            href={visit}
+            target='_blank'
+            rel='noreferrer'
+          >
+            Visit Online <KeyboardDoubleArrowRightIcon />
+          </a>
+        ) : (
+          ''
+        )}
+        {code ? (
+          <a className='btn btn-2' href={code} target='_blank' rel='noreferrer'>
+            See Code <KeyboardDoubleArrowRightIcon />
+          </a>
+        ) : (
+          ''
+        )}
       </div>
     </div>
   );

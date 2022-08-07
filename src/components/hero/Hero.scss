@@ -1,11 +1,12 @@
 .hero {
   width: 100%;
-  min-height: 80vh;
+  min-height: 85vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
   align-items: center;
   position: relative;
+  box-shadow: 0px 2px 2px grey;
   border-radius: 10px;
 
   @media (max-width: 850px) {
@@ -67,7 +68,7 @@
 
     span {
       background: #ffffff;
-      background-image: linear-gradient(90deg, #ffffff 0%, #e84855c8 58%);
+      background-image: linear-gradient(90deg, #ff0707 0%, #e84855 58%);
       color: transparent;
       background-clip: text;
     }
@@ -86,7 +87,7 @@
 
   .cta-button {
     margin-top: 1.5em;
-
+    padding: 1.5em;
     @media (max-width: 750px) {
       width: fit-content;
     }
@@ -94,6 +95,7 @@
 
   .cv-button {
     background-color: #e84855c8;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
+    color: white;
   }
 }

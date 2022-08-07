@@ -1,12 +1,14 @@
 .about_page {
   // margin-top: 5vh;
-  width: 100%;
-  min-height: 100vh;
-  padding: 2em;
+  width: 95%;
+  min-height: 90vh;
+  padding: 1em;
   display: flex;
+  margin: 4em auto 2em auto;
   gap: 1em;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0px 2px 2px grey;
   // background-color: white;
   // color: rgba(0, 0, 0, 0.812);
 
@@ -18,7 +20,7 @@
 
 .about-image {
   width: 40%;
-  margin-left: 5em;
+  // margin-left: 5em;
   margin-right: 5em;
   // border: 1px groove #e84855;
   // height: 60vh;
@@ -52,12 +54,10 @@
 }
 
 .about-description {
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   gap: 1em;
-  line-height: 1.5rem;
-  letter-spacing: 0.15em;
 
   p,
   h3 {
@@ -73,7 +73,7 @@
     width: 90%;
     margin-top: 4em;
 
-    .btn {
+    .about-btn {
       margin-left: 2em;
     }
   }
@@ -89,23 +89,24 @@
 
   .about-heading {
     font-family: 'Righteous', cursive;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    letter-spacing: 0.1em;
     line-height: 1.1em;
     margin-bottom: 0.5em;
   }
 
   .about-description {
-    font-size: 1rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.2rem;
     letter-spacing: 0.1em;
     margin-bottom: 0.2em;
   }
   .about-description-2 {
-    font-family: 'Jost', sans-serif;
-    letter-spacing: 0.1em;
-    line-height: 1.5em;
+    // letter-spacing: 0.1em;
+    // line-height: 1.5em;
 
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-bottom: 2em;
-    color: rgba(255, 255, 255, 0.375);
+    color: #3c3939db;
   }
 }
