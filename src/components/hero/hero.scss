@@ -23,10 +23,11 @@
     rgba(0, 0, 0, 0.7973783263305322) 8%,
     rgba(232, 72, 85, 0.7861738445378151) 79%
   );
-  min-width: 400px;
-  min-height: 400px;
+  min-width: 300px;
+  min-height: 300px;
   display: flex;
   align-items: center;
+  margin-bottom: 2em;
 
   img {
     padding-left: 2em;
@@ -36,7 +37,7 @@
     object-fit: contain;
   }
   @media (max-width: 850px) {
-    width: 50%;
+    width: 40%;
   }
 }
 
@@ -59,13 +60,19 @@
     font-family: 'Righteous', cursive;
     letter-spacing: 0.5rem;
     font-size: 5rem;
+
+    @media (max-width: 550px) {
+      font-size: 3rem;
+    }
   }
 
   .hero_text-services {
     font-size: 2rem;
     font-weight: 600;
     color: var(--sizzling-red);
-
+    @media (max-width: 550px) {
+      font-size: 1.2rem;
+    }
     span {
       background: #ffffff;
       background-image: linear-gradient(90deg, #ff0707 0%, #e84855 58%);
@@ -85,17 +92,28 @@
   align-items: center;
   gap: 2em;
 
+  @media (max-width: 450px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .cta-button {
     margin-top: 1.5em;
     padding: 1.5em;
     @media (max-width: 750px) {
-      width: fit-content;
+      min-width: fit-content;
+      padding: 0.5em 1em;
+      height: 10vw;
+      text-align: center;
     }
   }
 
   .cv-button {
-    background-color: #e84855c8;
+    background-color: #e84855;
     border: 1px solid transparent;
     color: white;
+    @media (max-width: 450px) {
+      margin-bottom: -2em;
+    }
   }
 }

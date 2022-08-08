@@ -27,6 +27,12 @@ body {
   // background-color: var(--dark-purple);
   // background-color: #1d012a;
   // color: #ffff;
+
+  @media (max-width: 550px) {
+    html {
+      font-size: 75%;
+    }
+  }
 }
 
 .hide {
@@ -38,7 +44,8 @@ body {
 }
 
 @media (max-width: 750px) {
-  html {
+  html,
+  h2 {
     font-size: 85%;
   }
 }
@@ -48,8 +55,8 @@ body {
   align-items: center;
   text-decoration: none;
   padding: 1.5em;
-  height: 5vh;
   border: none;
+  height: 5vh;
   font-size: 1rem;
   border-radius: 5px;
   width: fit-content;
@@ -59,6 +66,11 @@ body {
   letter-spacing: 0.2rem;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
+
+  @media (max-width: 750px) {
+    font-size: 85%;
+    letter-spacing: 0;
+  }
 }
 
 .btn:hover {
